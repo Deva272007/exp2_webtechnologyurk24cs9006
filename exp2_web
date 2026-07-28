@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony Beats - Music Band</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#34495e;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#f1c40f;
+}
+
+section{
+    width:90%;
+    margin:25px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h2{
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+img{
+    max-width:100%;
+    border-radius:10px;
+}
+
+.hero img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.gallery{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table,th,td{
+    border:1px solid #333;
+}
+
+th{
+    background:#2c3e50;
+    color:white;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+audio,video{
+    width:100%;
+    margin-top:15px;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+}
+
+progress{
+    width:100%;
+    height:25px;
+}
+
+fieldset{
+    padding:20px;
+    border:2px solid #2c3e50;
+}
+
+legend{
+    font-weight:bold;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:10px;
+    border:1px solid #999;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    background:#2c3e50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:#1a252f;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+.hero img{
+height:250px;
+}
+
+.gallery img{
+width:100%;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Harmony Beats</h1>
+<p>Music That Connects Everyone</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#albums">Albums</a>
+<a href="#members">Members</a>
+<a href="#gallery">Gallery</a>
+<a href="#media">Media</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+
+<h2>Welcome to Harmony Beats</h2>
+
+<img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1200" alt="Music Band">
+
+<p>
+Harmony Beats is a professional music band performing Pop, Rock,
+Jazz and Acoustic music. We perform at weddings, college events,
+corporate shows and music festivals.
+</p>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+Harmony Beats was founded in 2020 by passionate musicians.
+Our performances combine creativity, energy and entertainment.
+We believe music has the power to connect people and create unforgettable memories.
+</p>
+
+<p>
+Visit our
+<a href="https://www.youtube.com/@music_beatss-h9y" target="_blank">
+Official YouTube Channel
+</a>
+</p>
+
+</section>
+
+<section id="albums">
+
+<h2>Albums</h2>
+
+<table>
+
+<tr>
+<th>Cover</th>
+<th>Album</th>
+<th>Year</th>
+</tr>
+
+<tr>
+<td><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=250" width="150"></td>
+<td>Echoes of Tomorrow</td>
+<td>2024</td>
+</tr>
+
+<tr>
+<td><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=250" width="150"></td>
+<td>Midnight Horizon</td>
+<td>2025</td>
+</tr>
+
+<tr>
+<td><img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=250" width="150"></td>
+<td>Dream Pulse</td>
+<td>2026</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="members">
+
+<h2>Band Members</h2>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Role</th>
+</tr>
+
+<tr>
+<td>Ryan Carter</td>
+<td>Lead Vocalist</td>
+</tr>
+
+<tr>
+<td>Ethan Brooks</td>
+<td>Lead Guitarist</td>
+</tr>
+
+<tr>
+<td>Olivia Hayes</td>
+<td>Bass Guitarist</td>
+</tr>
+
+<tr>
+<td>Daniel Reed</td>
+<td>Drummer</td>
+</tr>
+
+<tr>
+<td>Sophia Turner</td>
+<td>Keyboard Player</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=500" alt="Concert">
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=500" alt="Singer">
+
+<img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=500" alt="Band">
+
+</div>
+
+</section>
+
+<section id="media">
+
+<h2>Listen to Our Music</h2>
+
+<audio controls>
+<source src="music.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</section>
+
+<section>
+
+<h2>Watch Our Videos</h2>
+
+<iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+
+</section>
+
+<section>
+
+<h2>New Album Recording Progress</h2>
+
+<p>Recording Status</p>
+
+<progress value="85" max="100"></progress>
+
+</section>
+
+<section id="contact">
+
+<h2>Book Our Band</h2>
+
+<form>
+
+<fieldset>
+
+<legend>Booking Form</legend>
+
+<label for="name">Name</label>
+<input type="text" id="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" required>
+
+<label for="phone">Phone</label>
+<input type="tel" id="phone">
+
+<label for="event">Select Event</label>
+
+<select id="event">
+<option>Wedding</option>
+<option>Birthday</option>
+<option>College Fest</option>
+<option>Corporate Event</option>
+<option>Concert</option>
+</select>
+
+<label for="date">Event Date</label>
+<input type="date" id="date">
+
+<label for="message">Message</label>
+<textarea id="message" rows="5"></textarea>
+
+<input type="submit" value="Book Now">
+
+</fieldset>
+
+</form>
+
+</section>
+
+<footer>
+
+<p><strong>Harmony Beats</strong></p>
+
+<p>Email : harmonybeats@email.com</p>
+
+<p>Phone : +91 98765 43210</p>
+
+<p>&copy; 2026 Harmony Beats. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
